@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+}
+
+/* CSS Selectors */
+
+p.center {
+    text-align: center;
+    color: red;
+    /* İki eyni class olanda tag ile secirik */
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    /*bucuryazandaherkompveyamobile-detamekrantutacaq.*/background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+    filter: blur(2px);
+    /*blur-bulanliqlasdirir*/
+    filter: brightness(2);
+    /* brightness - parlaqliqverir */
+    filter: contrast(1.5);
+    /* contrast - sekili keskinlesdirir */
+    
+}
+
+.img img{
+    width: 600px;
+    height: 300px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    /* Cerciveni gosterir */
+}
+
+.img img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.border {
+    width: 300px;
+    height: 300px;
+    border-right: 1px solid black;
+    margin: 0 auto;
+    border-color: blue;
+}
